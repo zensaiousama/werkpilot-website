@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://werkpilot.ch
+
+# Sitemaps
+Sitemap: https://werkpilot.ch/sitemap.xml
