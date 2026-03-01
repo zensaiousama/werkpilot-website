@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { restoreConsentFromStorage } from './CookieConsent';
 
 export default function DeferredAnalytics() {
   const loadedRef = useRef(false);
@@ -9,6 +10,9 @@ export default function DeferredAnalytics() {
   useEffect(() => {
     if (mountedRef.current) return;
     mountedRef.current = true;
+
+    // Restore consent for returning visitors (before GTM processes tags)
+    restoreConsentFromStorage();
 
     const load = () => {
       if (loadedRef.current) return;
@@ -35,13 +39,17 @@ function injectScripts() {
     navigator.serviceWorker.register('/sw.js').catch(() => {});
   }
 
-  // Custom event tracking utility
+  // Custom event tracking utility (Plausible + Clarity + GTM dataLayer)
   const w = window as unknown as Record<string, unknown>;
+  w.dataLayer = (w.dataLayer as unknown[]) || [];
   w.wpTrack = function(event: string, data?: Record<string, string>) {
     const plausible = w.plausible as ((event: string, opts: { props: Record<string, string> | undefined }) => void) | undefined;
     const clarity = w.clarity as ((cmd: string, key: string, value: string) => void) | undefined;
+    const dataLayer = w.dataLayer as unknown[];
     if (plausible) plausible(event, { props: data });
     if (clarity) clarity('set', event, JSON.stringify(data || {}));
+    // Push to GTM dataLayer for GA4
+    dataLayer.push({ event, ...data });
   };
 
   type TrackFn = (event: string, data: Record<string, string>) => void;

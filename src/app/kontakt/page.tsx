@@ -11,18 +11,6 @@ const contactMethods = [
     detail: 'info@werkpilot.ch',
     link: 'mailto:info@werkpilot.ch',
   },
-  {
-    icon: '📞',
-    title: 'Telefon',
-    detail: '+41 44 555 50 00',
-    link: 'tel:+41445555000',
-  },
-  {
-    icon: '💬',
-    title: 'LinkedIn',
-    detail: 'Folgen Sie uns',
-    link: 'https://linkedin.com/company/werkpilot',
-  },
 ];
 
 export default function KontaktPage() {
@@ -374,10 +362,6 @@ export default function KontaktPage() {
                       className="text-sm mb-6"
                       style={{ color: 'var(--color-text-secondary)' }}
                     >
-                      Schweizer Einzelfirma
-                      <br />
-                      Eingetragen im Handelsregister
-                      <br />
                       Zürich, Schweiz
                     </p>
 

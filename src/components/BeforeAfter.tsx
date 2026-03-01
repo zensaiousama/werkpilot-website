@@ -83,7 +83,7 @@ export default function BeforeAfter() {
       </div>
 
       <p className="text-center text-xs mt-4" style={{ color: 'var(--color-text-secondary)' }}>
-        Durchschnittswerte nach 3 Monaten — Treuhand Müller AG, Zürich
+        Durchschnittswerte nach 3 Monaten — basierend auf Kundendaten
       </p>
     </div>
   );

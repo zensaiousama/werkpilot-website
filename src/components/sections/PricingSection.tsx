@@ -14,7 +14,7 @@ const packages = [
       'Content & Social Media',
       'Reporting Dashboard',
     ],
-    cta: 'Paket waehlen',
+    cta: 'Paket wählen',
     ctaLink: '/dienstleistungen/kunden-gewinnen',
     highlight: false,
   },
@@ -30,14 +30,14 @@ const packages = [
       'Advanced CRM',
       'Priority Support',
     ],
-    cta: 'Paket waehlen',
+    cta: 'Paket wählen',
     ctaLink: '/dienstleistungen/effizienz',
     highlight: true,
     badge: 'Beliebteste Wahl',
   },
   {
     name: 'Wachstum',
-    price: "7'500",
+    price: "5'000",
     period: '/Monat',
     description: 'Enterprise mit Strategie',
     features: [
@@ -63,7 +63,7 @@ export default function PricingSection() {
             className="text-lg mt-4 max-w-2xl mx-auto"
             style={{ color: 'var(--color-text-secondary)' }}
           >
-            Keine Setup-Gebuehren. Keine versteckten Kosten. Monatlich kuendbar.
+            Keine Setup-Gebühren. Keine versteckten Kosten. Monatlich kündbar.
           </p>
         </AnimatedSection>
 

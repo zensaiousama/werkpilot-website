@@ -64,7 +64,7 @@ const packages = [
     name: 'Wachstum',
     slug: 'wachstum',
     tagline: 'Für wachsende Unternehmen',
-    price: 'Ab 7\'500',
+    price: '5\'000',
     period: 'pro Monat',
     description: 'Enterprise mit persönlichem Support',
     features: [

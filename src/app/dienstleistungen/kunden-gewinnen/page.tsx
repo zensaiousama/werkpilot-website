@@ -85,12 +85,12 @@ const results = [
 const testimonials = [
   {
     quote: 'Werkpilot hat uns geholfen, in 3 Monaten mehr Leads zu generieren als im ganzen letzten Jahr. Das System läuft komplett automatisch.',
-    author: 'Stefan M.',
+    author: 'Inhaber',
     company: 'Sanitärbetrieb, Zürich',
   },
   {
     quote: 'Ich habe endlich Zeit für mein Kerngeschäft. Das Marketing läuft von selbst und die Qualität der Leads ist deutlich besser.',
-    author: 'Andrea K.',
+    author: 'Inhaberin',
     company: 'Coiffeur-Salon, Bern',
   },
 ];
@@ -588,7 +588,7 @@ export default function KundenGewinnenPage() {
                       color: 'var(--color-primary)',
                     }}
                   >
-                    Kann ich später auf ein größeres Paket upgraden?
+                    Kann ich später auf ein grösseres Paket upgraden?
                   </h3>
                   <p
                     className="text-sm"

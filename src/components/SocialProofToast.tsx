@@ -3,14 +3,14 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 const notifications = [
-  { company: 'Treuhand Weber', location: 'Zürich', action: 'hat +340% mehr Traffic erreicht', result: true },
-  { company: 'Zahnarztpraxis Meier', location: 'Bern', action: 'ist Kunde geworden', result: false },
-  { company: 'Immobilien Schneider', location: 'Basel', action: 'hat 12 neue Mandanten/Monat gewonnen', result: true },
-  { company: 'Consulting Hofmann', location: 'Luzern', action: 'spart 20h Admin-Arbeit pro Woche', result: true },
-  { company: 'Rechtsberatung Fischer', location: 'St. Gallen', action: 'hat den Fitness-Check gestartet', result: false },
-  { company: 'Weber IT Solutions', location: 'Winterthur', action: 'hat ROI nach 8 Wochen erreicht', result: true },
-  { company: 'Architektur Brunner', location: 'Zug', action: 'nutzt Kunden gewinnen', result: false },
-  { company: 'Praxis Dr. Keller', location: 'Thun', action: 'hat +180% mehr Anfragen erreicht', result: true },
+  { company: 'Ein Treuhandbüro', location: 'Zürich', action: 'hat +340% mehr Traffic erreicht', result: true },
+  { company: 'Eine Zahnarztpraxis', location: 'Bern', action: 'ist Kunde geworden', result: false },
+  { company: 'Eine Immobilienfirma', location: 'Basel', action: 'hat 12 neue Mandanten/Monat gewonnen', result: true },
+  { company: 'Eine Beratungsfirma', location: 'Luzern', action: 'spart 20h Admin-Arbeit pro Woche', result: true },
+  { company: 'Eine Rechtsberatung', location: 'St. Gallen', action: 'hat den Fitness-Check gestartet', result: false },
+  { company: 'Ein IT-Dienstleister', location: 'Winterthur', action: 'hat ROI nach 8 Wochen erreicht', result: true },
+  { company: 'Ein Architekturbüro', location: 'Zug', action: 'nutzt Kunden gewinnen', result: false },
+  { company: 'Eine Arztpraxis', location: 'Thun', action: 'hat +180% mehr Anfragen erreicht', result: true },
 ];
 
 const timeOffsets = notifications.map(() => Math.floor(Math.random() * 15) + 2);

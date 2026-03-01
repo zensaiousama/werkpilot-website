@@ -4,20 +4,14 @@ export const SITE_DESCRIPTION = 'Das Betriebssystem für Schweizer KMUs';
 
 export const CONTACT = {
   email: 'info@werkpilot.ch',
-  phone: '+41445555000',
-  phoneFormatted: '+41 44 555 50 00',
   address: {
-    street: 'Bahnhofstrasse 10',
     city: 'Zürich',
-    zip: '8001',
     canton: 'ZH',
     country: 'CH',
   },
 } as const;
 
-export const SOCIAL = {
-  linkedin: 'https://linkedin.com/company/werkpilot',
-} as const;
+export const SOCIAL = {} as const;
 
 export const PRICING = {
   effizienz: { price: 1500, currency: 'CHF' },
@@ -53,3 +47,11 @@ export const BRANCHEN = [
   'Handel / E-Commerce',
   'Andere',
 ] as const;
+
+// EmailJS Configuration
+// Replace these placeholder values with your actual EmailJS credentials
+// from https://dashboard.emailjs.com
+export const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
+export const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
+export const EMAILJS_TEMPLATE_NOTIFY = 'YOUR_NOTIFICATION_TEMPLATE_ID';
+export const EMAILJS_TEMPLATE_AUTOREPLY = 'YOUR_AUTOREPLY_TEMPLATE_ID';

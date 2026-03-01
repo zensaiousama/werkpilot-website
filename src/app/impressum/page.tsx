@@ -34,7 +34,7 @@ export default function ImpressumPage() {
                 className="text-lg"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                Angaben gemäß Schweizer Recht
+                Angaben gemäss Schweizer Recht
               </p>
             </div>
           </div>
@@ -67,13 +67,7 @@ export default function ImpressumPage() {
                       <strong>Firmenname:</strong> Werkpilot
                     </p>
                     <p>
-                      <strong>Rechtsform:</strong> Einzelfirma
-                    </p>
-                    <p>
                       <strong>Land:</strong> Schweiz
-                    </p>
-                    <p>
-                      <strong>Handelsregister:</strong> Eingetragen im Handelsregister
                     </p>
                   </div>
                 </div>
@@ -101,16 +95,6 @@ export default function ImpressumPage() {
                         style={{ color: 'var(--color-accent)' }}
                       >
                         info@werkpilot.ch
-                      </a>
-                    </p>
-                    <p>
-                      <strong>Telefon:</strong>{' '}
-                      <a
-                        href="tel:+41445555000"
-                        className="hover:opacity-70 transition-opacity"
-                        style={{ color: 'var(--color-accent)' }}
-                      >
-                        +41 44 555 50 00
                       </a>
                     </p>
                     <p>
@@ -142,7 +126,7 @@ export default function ImpressumPage() {
                     style={{ color: 'var(--color-text)' }}
                   >
                     <p>
-                      Verantwortlich für den Inhalt dieser Website gemäß Schweizer
+                      Verantwortlich für den Inhalt dieser Website gemäss Schweizer
                       Recht ist Werkpilot.
                     </p>
                     <p>
@@ -159,30 +143,6 @@ export default function ImpressumPage() {
                   </div>
                 </div>
 
-                {/* MWST */}
-                <div>
-                  <h2
-                    className="text-2xl font-bold mb-4"
-                    style={{
-                      fontFamily: 'var(--font-jakarta)',
-                      color: 'var(--color-primary)',
-                    }}
-                  >
-                    Mehrwertsteuer
-                  </h2>
-                  <div
-                    className="space-y-2 text-base"
-                    style={{ color: 'var(--color-text)' }}
-                  >
-                    <p>
-                      <strong>MWST-Nummer:</strong> CHE-XXX.XXX.XXX MWST
-                    </p>
-                    <p>
-                      Alle Preise verstehen sich inklusive der gesetzlichen
-                      Mehrwertsteuer.
-                    </p>
-                  </div>
-                </div>
 
                 {/* Disclaimer */}
                 <div>
@@ -233,8 +193,8 @@ export default function ImpressumPage() {
                       </h3>
                       <p style={{ color: 'var(--color-text-secondary)' }}>
                         Bei direkten oder indirekten Verweisen auf fremde Webseiten
-                        (&ldquo;Hyperlinks&rdquo;), die außerhalb des Verantwortungsbereiches des
-                        Autors liegen, würde eine Haftungsverpflichtung ausschließlich
+                        (&ldquo;Hyperlinks&rdquo;), die ausserhalb des Verantwortungsbereiches des
+                        Autors liegen, würde eine Haftungsverpflichtung ausschliesslich
                         in dem Fall in Kraft treten, in dem der Autor von den Inhalten
                         Kenntnis hat und es ihm technisch möglich und zumutbar wäre,
                         die Nutzung im Falle rechtswidriger Inhalte zu verhindern.

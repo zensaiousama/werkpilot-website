@@ -70,12 +70,12 @@ const results = [
 const testimonials = [
   {
     quote: 'Seit wir Werkpilot nutzen, läuft unser gesamtes Backoffice automatisch. Rechnungen, Mahnwesen, Support — alles ohne dass ich mich darum kümmern muss. Das ist wie ein komplettes Team für einen Bruchteil der Kosten.',
-    author: 'Thomas R.',
+    author: 'Geschäftsführer',
     company: 'Schreinerei, Luzern',
   },
   {
-    quote: 'Als wachsendes Unternehmen brauchten wir eine Lösung, die skaliert. Werkpilot gibt uns die Struktur eines großen Unternehmens, ohne die hohen Personalkosten. Absolute Empfehlung!',
-    author: 'Julia S.',
+    quote: 'Als wachsendes Unternehmen brauchten wir eine Lösung, die skaliert. Werkpilot gibt uns die Struktur eines grossen Unternehmens, ohne die hohen Personalkosten. Absolute Empfehlung!',
+    author: 'Inhaberin',
     company: 'Marketingagentur, Basel',
   },
 ];
@@ -531,7 +531,7 @@ export default function EffizienzPage() {
                     className="text-sm"
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
-                    Ihr Unternehmen wächst, aber Sie haben keine Zeit, ein großes Team
+                    Ihr Unternehmen wächst, aber Sie haben keine Zeit, ein grosses Team
                     aufzubauen. Werkpilot gibt Ihnen die Struktur, ohne die Kosten.
                   </p>
                 </div>
@@ -575,7 +575,7 @@ export default function EffizienzPage() {
                       color: 'var(--color-primary)',
                     }}
                   >
-                    Kleine Teams, große Ziele
+                    Kleine Teams, grosse Ziele
                   </h3>
                   <p
                     className="text-sm"
@@ -607,7 +607,7 @@ export default function EffizienzPage() {
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
                     24/7 Support, automatische Rechnungen, schnelle Antworten — wirken
-                    Sie wie ein großes Unternehmen, bleiben Sie agil wie ein Startup.
+                    Sie wie ein grosses Unternehmen, bleiben Sie agil wie ein Startup.
                   </p>
                 </div>
               </div>

@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientOverlays from "@/components/ClientOverlays";
 import SpeculationRules from '@/components/SpeculationRules';
 import CriticalPreloads from '@/components/CriticalPreloads';
+import { GoogleTagManagerHead, GoogleTagManagerNoScript } from '@/components/GoogleTagManager';
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
@@ -72,14 +73,13 @@ export const metadata: Metadata = {
   manifest: '/manifest.json',
   openGraph: {
     title: "Werkpilot — Das Betriebssystem für Schweizer KMUs",
-    description: "Mehr Kunden. Weniger Admin. Ihr virtuelles Backoffice. 43 Spezialisten arbeiten 24/7 für Ihr KMU — ab CHF 1'500/Monat.",
+    description: "Mehr Kunden. Weniger Admin. Ihr virtuelles Backoffice. AI-gestützte Automatisierung rund um die Uhr für Ihr KMU — ab CHF 1'500/Monat.",
     url: "https://werkpilot.ch",
     siteName: "Werkpilot",
     locale: "de_CH",
     type: "website",
     countryName: "Switzerland",
     emails: ["info@werkpilot.ch"],
-    phoneNumbers: ["+41445555000"],
   },
   twitter: {
     card: "summary_large_image",
@@ -131,7 +131,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    <html lang="de-CH">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon-192.svg" type="image/svg+xml" />
@@ -143,10 +143,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Werkpilot" />
         <CriticalPreloads />
         <SpeculationRules />
+        <GoogleTagManagerHead />
       </head>
       <body
         className={`${jakarta.variable} ${dmSans.variable} antialiased`}
       >
+        <GoogleTagManagerNoScript />
         <a href="#main-content" className="skip-to-content">
           Zum Hauptinhalt springen
         </a>

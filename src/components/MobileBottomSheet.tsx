@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 const quickActions = [
   { href: '/fitness-check', label: 'Gratis Fitness-Check', icon: '⚡' },
-  { href: 'tel:+41445555000', label: 'Anrufen', icon: '📞' },
   { href: 'mailto:info@werkpilot.ch', label: 'Email senden', icon: '✉️' },
   { href: '/preise', label: 'Preise ansehen', icon: '💰' },
 ];

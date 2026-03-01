@@ -7,7 +7,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Über uns — Werkpilot',
   description:
-    'Werkpilot ist ein Schweizer Unternehmen mit der Mission, KMUs durch intelligente Automatisierung zu stärken. Erfahren Sie mehr über unsere Vision, Werte und warum hunderte Schweizer KMUs uns vertrauen.',
+    'Werkpilot ist ein Schweizer Unternehmen mit der Mission, KMUs durch intelligente Automatisierung zu stärken. Erfahren Sie mehr über unsere Vision, Werte und unseren Ansatz.',
   openGraph: {
     title: 'Über uns — Werkpilot',
     description: 'Das Schweizer Unternehmen hinter Ihrem virtuellen Backoffice.',
@@ -23,7 +23,7 @@ const values = [
     icon: '🇨🇭',
     title: '100% Schweizer Qualität',
     description:
-      'Als Schweizer Unternehmen verstehen wir die Bedürfnisse lokaler KMUs. Unsere Lösungen sind auf den Schweizer Markt zugeschnitten — von der Rechnung bis zur MWST.',
+      'Als Schweizer Unternehmen verstehen wir die Bedürfnisse lokaler KMUs. Unsere Lösungen sind auf den Schweizer Markt zugeschnitten — praxisnah und effizient.',
   },
   {
     icon: '🤝',
@@ -58,12 +58,12 @@ const values = [
 ];
 
 const founderStory = {
-  name: 'Marco Hofmann',
-  role: 'Gründer & CEO',
+  name: 'Das Werkpilot-Team',
+  role: 'Gründer',
   story: [
-    'Als ich 2023 mein erstes Treuhandbüro beriet, wurde mir eines klar: Schweizer KMU-Inhaber sind Experten in ihrem Fach — aber sie kämpfen täglich mit Marketing, Admin und Digitalisierung. Nicht weil sie es nicht könnten, sondern weil der Tag nur 24 Stunden hat.',
-    'Ich habe 15 Jahre in Marketing, Vertrieb und Technologie gearbeitet — von der Grossbank bis zum Startup. Überall sah ich das gleiche Problem: Kleine Unternehmen haben Zugang zu Weltklasse-Produkten, aber nicht zu Weltklasse-Prozessen.',
-    'Also habe ich Werkpilot gegründet. Nicht als Software-Firma, sondern als Partner. Wir bringen jedem KMU die gleichen Tools und Strategien, die sonst nur Konzernen vorbehalten sind — nur eben erschwinglich, verständlich und auf die Schweiz zugeschnitten.',
+    'Als wir 2023 unser erstes Treuhandbüro berieten, wurde uns eines klar: Schweizer KMU-Inhaber sind Experten in ihrem Fach — aber sie kämpfen täglich mit Marketing, Admin und Digitalisierung. Nicht weil sie es nicht könnten, sondern weil der Tag nur 24 Stunden hat.',
+    'Unser Team hat jahrelang in Marketing, Vertrieb und Technologie gearbeitet — von der Grossbank bis zum Startup. Überall sahen wir das gleiche Problem: Kleine Unternehmen haben Zugang zu Weltklasse-Produkten, aber nicht zu Weltklasse-Prozessen.',
+    'Also haben wir Werkpilot gegründet. Nicht als reine Software-Firma, sondern als Partner. Wir bringen KMUs die gleichen Tools und Strategien, die sonst nur Konzernen vorbehalten sind — erschwinglich, verständlich und auf die Schweiz zugeschnitten.',
   ],
 };
 
@@ -71,7 +71,7 @@ const team = [
   {
     role: 'Gründung & Vision',
     description:
-      'Werkpilot wurde 2024 gegründet mit der Vision, modernste AI-Technologie für Schweizer KMUs zugänglich zu machen. Was als Experiment begann, ist heute die bevorzugte Backoffice-Lösung für hunderte Unternehmen.',
+      'Werkpilot wurde 2024 gegründet mit der Vision, modernste AI-Technologie für Schweizer KMUs zugänglich zu machen. Was als Idee begann, ist heute eine wachsende Backoffice-Lösung für Schweizer Unternehmen.',
   },
   {
     role: 'Unser Team',
@@ -87,35 +87,35 @@ const team = [
 
 const stats = [
   {
-    number: '200+',
-    label: 'Zufriedene KMUs',
+    number: '2024',
+    label: 'Gegründet in Zürich',
   },
   {
-    number: '43',
-    label: 'Spezialisierte AI-Agenten',
+    number: 'AI',
+    label: 'Modernste Technologie',
   },
   {
-    number: '99.9%',
-    label: 'Uptime Garantie',
+    number: '100%',
+    label: 'Schweizer Unternehmen',
   },
   {
     number: '24/7',
-    label: 'Verfügbar für Sie',
+    label: 'Automatisierung aktiv',
   },
 ];
 
 const certifications = [
   {
-    title: 'Schweizer Einzelfirma',
-    description: 'Eingetragen im Handelsregister',
+    title: 'Schweizer Unternehmen',
+    description: 'Ansässig in der Schweiz',
   },
   {
     title: 'DSGVO & DSG konform',
     description: 'Vollständige Datenschutz-Compliance',
   },
   {
-    title: 'ISO 27001 Standard',
-    description: 'Information Security Management',
+    title: 'Schweizer Server',
+    description: 'Alle Daten bleiben in der Schweiz',
   },
   {
     title: 'SSL Verschlüsselung',
@@ -138,12 +138,12 @@ export default function UeberUnsPage() {
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+41-44-555-50-00',
+      email: 'info@werkpilot.ch',
       contactType: 'customer service',
       areaServed: 'CH',
       availableLanguage: ['de', 'fr', 'it', 'en'],
     },
-    sameAs: ['https://linkedin.com/company/werkpilot'],
+    sameAs: [],
   };
 
   const breadcrumbJsonLd = {
@@ -264,7 +264,7 @@ export default function UeberUnsPage() {
                       className="w-28 h-28 rounded-full flex items-center justify-center text-white text-3xl font-bold"
                       style={{ backgroundColor: 'var(--color-accent)' }}
                     >
-                      MH
+                      WP
                     </div>
                     <p
                       className="text-center mt-3 font-bold text-sm"
@@ -299,7 +299,7 @@ export default function UeberUnsPage() {
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                           <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="var(--color-success)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                        15+ Jahre Erfahrung
+                        Marketing & Tech Erfahrung
                       </div>
                       <div
                         className="flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium"

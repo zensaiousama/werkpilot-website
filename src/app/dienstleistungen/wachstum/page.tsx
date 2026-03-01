@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   title: 'Wachstum — Werkpilot',
   description:
-    'Das Enterprise-Paket für wachsende Unternehmen: Alle 43 AI-Agenten + persönlicher Account Manager + strategisches Consulting. Individuell konfigurierbar. Ab CHF 7\'500/Monat.',
+    'Das Enterprise-Paket für wachsende Unternehmen: Alle 43 AI-Agenten + persönlicher Account Manager + strategisches Consulting. Individuell konfigurierbar. CHF 5\'000/Monat.',
   openGraph: {
     title: 'Wachstum — Werkpilot',
     description: 'Enterprise-Lösung mit allen 43 Agenten + persönlichem Support.',
@@ -31,7 +31,7 @@ const enterpriseFeatures = [
     icon: '🔧',
     title: 'Custom AI Agent Development',
     description:
-      'Wir entwickeln maßgeschneiderte Agenten für Ihre spezifischen Geschäftsprozesse.',
+      'Wir entwickeln massgeschneiderte Agenten für Ihre spezifischen Geschäftsprozesse.',
   },
   {
     icon: '🎨',
@@ -67,13 +67,13 @@ const enterpriseFeatures = [
     icon: '📝',
     title: 'Individuelle SLAs',
     description:
-      'Maßgeschneiderte Service Level Agreements für Ihre Anforderungen.',
+      'Massgeschneiderte Service Level Agreements für Ihre Anforderungen.',
   },
   {
     icon: '🎓',
     title: 'Training & Workshops',
     description:
-      'Regelmäßige Schulungen für Ihr Team zur optimalen Nutzung des Systems.',
+      'Regelmässige Schulungen für Ihr Team zur optimalen Nutzung des Systems.',
   },
   {
     icon: '🖥️',
@@ -107,7 +107,7 @@ const comparisonPackages = [
   },
   {
     name: 'Wachstum',
-    price: 'Ab CHF 7\'500',
+    price: 'CHF 5\'000',
     highlight: true,
     features: [
       'Alle 43 Agenten',
@@ -152,13 +152,13 @@ const useCases = [
 const testimonials = [
   {
     quote: 'Als wir von 5 auf 25 Mitarbeiter wuchsen, war Werkpilot der Grund, warum wir die Kontrolle behielten. Der Account Manager versteht unser Business besser als manche unserer Mitarbeiter. Die Custom Agents, die sie für uns entwickelt haben, sind Gold wert.',
-    author: 'Michael B.',
+    author: 'Geschäftsführer',
     company: 'IT-Dienstleister, Zürich',
   },
   {
     quote: 'Wir nutzen Werkpilot nicht nur intern, sondern bieten es als White Label unseren Kunden an. Das hat uns ein komplett neues Geschäftsfeld eröffnet. Der Support ist erstklassig.',
-    author: 'Sandra L.',
-    company: 'Business Consulting, Genf',
+    author: 'Inhaberin',
+    company: 'Beratungsfirma, Genf',
   },
 ];
 
@@ -175,10 +175,10 @@ export default function WachstumPage() {
     offers: {
       '@type': 'Offer',
       priceCurrency: 'CHF',
-      price: '7500',
+      price: '5000',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '7500',
+        price: '5000',
         priceCurrency: 'CHF',
         unitText: 'MONTH',
       },
@@ -263,7 +263,7 @@ export default function WachstumPage() {
                 className="text-xl mb-8"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
-                Die Enterprise-Lösung für Unternehmen, die Großes vorhaben. Alle 43
+                Die Enterprise-Lösung für Unternehmen, die Grosses vorhaben. Alle 43
                 AI-Agenten, individuell angepasst auf Ihre Prozesse, mit persönlichem
                 Account Manager und strategischem Consulting.
               </p>
@@ -286,7 +286,7 @@ export default function WachstumPage() {
                       color: 'var(--color-primary)',
                     }}
                   >
-                    Ab CHF 7&apos;500
+                    CHF 5&apos;000
                   </div>
                   <div
                     className="text-sm"
@@ -571,7 +571,7 @@ export default function WachstumPage() {
                     className="text-sm"
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
-                    Wir erstellen ein maßgeschneidertes Angebot basierend auf Ihren
+                    Wir erstellen ein massgeschneidertes Angebot basierend auf Ihren
                     Bedürfnissen.
                   </p>
                 </div>
@@ -629,7 +629,7 @@ export default function WachstumPage() {
                     className="text-sm"
                     style={{ color: 'var(--color-text-secondary)' }}
                   >
-                    Regelmäßige Reviews und Optimierungen für maximale Performance.
+                    Regelmässige Reviews und Optimierungen für maximale Performance.
                   </p>
                 </div>
               </div>

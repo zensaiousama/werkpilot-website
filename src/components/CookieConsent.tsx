@@ -35,14 +35,17 @@ export default function CookieConsent() {
   const handleAccept = () => {
     localStorage.setItem(CONSENT_KEY, 'accepted');
     setVisible(false);
-    // Trigger storage event for useSyncExternalStore
     window.dispatchEvent(new Event('storage'));
+    // Push consent update to GTM dataLayer
+    pushConsentUpdate(true);
   };
 
   const handleDecline = () => {
     localStorage.setItem(CONSENT_KEY, 'declined');
     setVisible(false);
     window.dispatchEvent(new Event('storage'));
+    // Push consent denial to GTM dataLayer
+    pushConsentUpdate(false);
   };
 
   // Already decided or not yet shown
@@ -109,4 +112,31 @@ export default function CookieConsent() {
 export function hasAnalyticsConsent(): boolean {
   if (typeof window === 'undefined') return false;
   return localStorage.getItem(CONSENT_KEY) === 'accepted';
+}
+
+/**
+ * Push Google Consent Mode v2 update to GTM dataLayer.
+ */
+function pushConsentUpdate(granted: boolean) {
+  const w = window as unknown as { dataLayer?: unknown[] };
+  w.dataLayer = w.dataLayer || [];
+  function gtag(...args: unknown[]) {
+    w.dataLayer!.push(args);
+  }
+  gtag('consent', 'update', {
+    analytics_storage: granted ? 'granted' : 'denied',
+    ad_storage: granted ? 'granted' : 'denied',
+    ad_user_data: granted ? 'granted' : 'denied',
+    ad_personalization: granted ? 'granted' : 'denied',
+  });
+}
+
+/**
+ * Restore consent state on page load (for returning visitors).
+ */
+export function restoreConsentFromStorage() {
+  if (typeof window === 'undefined') return;
+  const stored = localStorage.getItem(CONSENT_KEY);
+  if (stored === 'accepted') pushConsentUpdate(true);
+  if (stored === 'declined') pushConsentUpdate(false);
 }
